@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{2f5e97ac-db0f-40f1-91c3-be17ee40bfe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util\Math">
+      <UniqueIdentifier>{b9b1ff1a-03d7-425a-8b95-7f0c0a6dff35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{89e1f6b4-0124-411a-8c66-926fe7b8b5df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util\Math">
+      <UniqueIdentifier>{9ec2cefe-401d-4090-beab-f8d2d7457f30}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LT_Time.h">
+      <Filter>Header Files\Util\Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LT_Time.cpp">
+      <Filter>Source Files\Util\Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
