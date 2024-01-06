@@ -31,7 +31,6 @@ private:
 		LT_TIMESTAMP_MINUTE,
 		LT_TIMESTAMP_LEADING_ZERO_SECOND,
 		LT_TIMESTAMP_SECOND,
-		LT_TIMESTAMP_LEADING_ZERO_MILLISECOND,
 		LT_TIMESTAMP_MILLISECOND
 	};
 
@@ -41,7 +40,10 @@ private:
 	};
 
 	int writtenMonthToInt(std::string month);
-
+	
+	int char_to_int(char c);
+	bool char_is_int(char c);
+	bool char_is_letter(char c);
 
 	std::string formatString;
 	std::vector<LT_TimestampFormatToken> tokens;
@@ -57,8 +59,12 @@ struct LT_TimePoint {
 	time_t epoch() {
 		return time;
 	}
+
+	struct LT_SeparatedTime
+	{
+		int year, month, day, hour, minute, second, millisecond;
+	};
 	
 private:
-	time_t time;
-
+	time_t time; // epoch time
 };
